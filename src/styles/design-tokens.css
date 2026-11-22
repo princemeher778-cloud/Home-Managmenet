@@ -1,0 +1,125 @@
+:root {
+  /* Color Palette - Neutrals */
+  --color-bg-canvas: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-subtle: #f1f5f9;
+  --color-bg-muted: #e2e8f0;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+
+  --color-border-subtle: #f1f5f9;
+  --color-border-default: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Accent - Tasknur Vibrant Violet & Purple */
+  --color-accent-primary: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-accent-active: #5b21b6;
+  --color-accent-light: #f5f3ff;
+  --color-accent-border: #ddd6fe;
+  --color-accent-contrast: #ffffff;
+  --color-hero-gradient: linear-gradient(135deg, rgba(124, 58, 237, 0.92) 0%, rgba(99, 102, 241, 0.88) 50%, rgba(79, 70, 229, 0.94) 100%);
+
+  /* Premium Darker Glassmorphism Design Tokens */
+  --glass-bg-canvas: radial-gradient(circle at 10% 8%, rgba(124, 58, 237, 0.22) 0%, transparent 46%),
+    radial-gradient(circle at 90% 12%, rgba(99, 102, 241, 0.24) 0%, transparent 48%),
+    radial-gradient(circle at 50% 38%, rgba(139, 92, 246, 0.15) 0%, transparent 56%),
+    radial-gradient(circle at 85% 82%, rgba(168, 85, 247, 0.18) 0%, transparent 48%),
+    radial-gradient(circle at 15% 90%, rgba(79, 70, 229, 0.18) 0%, transparent 46%),
+    #ece8f6;
+  --glass-surface: rgba(255, 255, 255, 0.72);
+  --glass-surface-elevated: rgba(255, 255, 255, 0.88);
+  --glass-surface-subtle: rgba(245, 243, 255, 0.60);
+  --glass-surface-dark: rgba(15, 23, 42, 0.88);
+  --glass-surface-hero: linear-gradient(135deg, rgba(30, 27, 75, 0.94) 0%, rgba(88, 28, 135, 0.90) 50%, rgba(15, 23, 42, 0.95) 100%);
+  --glass-surface-accent: rgba(124, 58, 237, 0.12);
+
+  --glass-border-light: rgba(255, 255, 255, 0.92);
+  --glass-border-subtle: rgba(196, 181, 253, 0.35);
+  --glass-border-default: rgba(167, 139, 250, 0.40);
+  --glass-border-dark: rgba(255, 255, 255, 0.18);
+  --glass-border-accent: rgba(124, 58, 237, 0.38);
+
+  --glass-blur-sm: 8px;
+  --glass-blur-md: 16px;
+  --glass-blur-lg: 24px;
+
+  --glass-shadow-sm: 0 4px 14px 0 rgba(76, 29, 149, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+  --glass-shadow-md: 0 10px 30px -4px rgba(76, 29, 149, 0.10), 0 2px 8px -1px rgba(15, 23, 42, 0.04), inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+  --glass-shadow-lg: 0 20px 45px -6px rgba(76, 29, 149, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.98);
+  --glass-shadow-hero: 0 20px 42px -4px rgba(46, 16, 101, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.30);
+  --glass-shadow-fab: 0 10px 25px 0 rgba(124, 58, 237, 0.50), 0 0 16px rgba(168, 85, 247, 0.30), inset 0 1px 0 0 rgba(255, 255, 255, 0.45);
+
+  /* Dark Charcoal Header Tokens */
+  --color-header-bg: #0f172a;
+  --color-header-text: #ffffff;
+  --color-header-muted: #94a3b8;
+  --color-header-border: #1e293b;
+
+  /* Tasknur Hero Surfaces */
+  --color-hero-bg: #0f172a;
+  --color-hero-surface: #1e293b;
+  --color-hero-text: #ffffff;
+  --color-hero-muted: #94a3b8;
+
+  /* Tasknur Pastel Category Accents */
+  --color-pastel-blue: #e0f2fe;
+  --color-pastel-blue-text: #0284c7;
+  --color-pastel-purple: #f3e8ff;
+  --color-pastel-purple-text: #7e22ce;
+  --color-pastel-orange: #ffedd5;
+  --color-pastel-orange-text: #c2410c;
+  --color-pastel-green: #dcfce7;
+  --color-pastel-green-text: #16a34a;
+
+  /* Semantic Status Tokens */
+  --color-success-bg: #ecfdf5;
+  --color-success-text: #059669;
+  --color-success-border: #a7f3d0;
+
+  --color-warning-bg: #fffbeb;
+  --color-warning-text: #b45309;
+  --color-warning-border: #fde68a;
+
+  --color-danger-bg: #fef2f2;
+  --color-danger-text: #dc2626;
+  --color-danger-border: #fecaca;
+
+  --color-info-bg: #eff6ff;
+  --color-info-text: #2563eb;
+  --color-info-border: #bfdbfe;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+
+  /* Border Radii - Enhanced iOS Curves */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Refined, Smooth Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 14px 28px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+
+  /* Layout dimensions */
+  --sidebar-width: 260px;
+  --header-height: 68px;
+  --mobile-nav-height: 64px;
+}

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "test": "node --experimental-strip-types tests/financial-logic.test.ts && node --experimental-strip-types tests/expenses-logic.test.ts && node --experimental-strip-types tests/inventory-logic.test.ts && node --experimental-strip-types tests/cleaning-logic.test.ts && node --experimental-strip-types tests/bills-rent-logic.test.ts",
+    "test": "node --experimental-strip-types tests/financial-logic.test.ts && node --experimental-strip-types tests/expenses-logic.test.ts && node --experimental-strip-types tests/inventory-logic.test.ts && node --experimental-strip-types tests/cleaning-logic.test.ts && node --experimental-strip-types tests/bills-rent-logic.test.ts && node --experimental-strip-types tests/scanner-logic.test.ts",
     "preview": "vite preview"
   },
   "dependencies": {
